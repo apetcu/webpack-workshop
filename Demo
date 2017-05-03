@@ -1,19 +1,21 @@
 I Introduction
-	1. Basic webpack example / install / simple configuration
+	1. Basic webpack example / install / simple configuration (ex1)
 
 II. Loaders
-	1. Webpack config files / loaders - css
-	2. Sass loader
+	1. Webpack config files / loaders - css (ex2)
+	2. Sass loader (ex2)
 
 III. Migrating to es6
-	1. Babel loader
-	2. Basic example with jquery from node-modules
+	1. Babel loader (ex3)
+	2. Basic example with jquery from node-modules (ex3)
+	3. Progress bar & colored interface (ex4)
 
 IV. Separation and upgrades
-	1. Extract text plugin -> css separate
-	2. Webpack watch
-	3. Es6 classes & more complex code
+	1. Extract text plugin -> css separate (ex5)
+	2. Webpack watch (ex5)
+	3. Es6 classes & more complex code (ex5)
 
 V. Advanced
 	1. Chunks and dependencies
 	2. Hot module replacement
+	3. Minify & concat
