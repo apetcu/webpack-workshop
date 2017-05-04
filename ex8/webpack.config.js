@@ -31,10 +31,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: "css-loader"
-            })
+            loader: ['style-loader', 'css-loader']
         }, {
             test: /\.js$/,
             exclude: /(node_modules|bower_components)/,
@@ -45,7 +42,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new ExtractTextPlugin("assets/css/stlye.css"),
         new webpack.optimize.CommonsChunkPlugin({
             name: "vendor",
             minChunks: Infinity,
@@ -59,5 +55,10 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, public_dir),
+        compress: true,
+        port: 9000
+    }
 };

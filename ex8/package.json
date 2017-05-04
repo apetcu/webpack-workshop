@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack --progress --colors --watch",
+    "dev": "webpack-dev-server --inline  --hot",
     "prod": "rimraf public/ && webpack --progress --colors -p"
   },
   "author": "",
